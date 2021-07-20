@@ -1,11 +1,8 @@
 import "./style.css";
 
-function PlayerName(){
+function PlayerName(name){
     return `
-        <p>Player 1</p>
-        <p>Player 2</p>
-        
-    
+        <p>${name}</p>
     `
 };
 export default PlayerName;

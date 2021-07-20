@@ -6,7 +6,7 @@ function ScoreBoard(){
     <header class="score-board">
         ${PlayerName("Player 1")}
         ${PlayerName("Player 2")}
-    </header
+    </header>
     `
 }
 export default ScoreBoard;

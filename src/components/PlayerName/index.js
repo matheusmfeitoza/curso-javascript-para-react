@@ -2,7 +2,7 @@ import "./style.css";
 
 function PlayerName(name){
     return `
-        <p>${name}</p>
+        <p class="player-name">${name}</p>
     `
 };
 export default PlayerName;

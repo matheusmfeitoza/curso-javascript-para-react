@@ -8,6 +8,17 @@ const $root = document.querySelector("#root");
 
 $root.insertAdjacentHTML("beforeend",`
     ${ScoreBoard()}
-    ${BoardGame(2)}
+    ${BoardGame(4)}
 `
 );
+const getClick = document.querySelectorAll(".card-front-back");
+for(let i = 0; i < getClick.length; i++){
+    getClick[i].addEventListener('click',function(){
+        if(getClick[i].className === "card-front-back -active"){
+            getClick[i].className = "card-front-back"
+        }else{
+            getClick[i].className += " -active"
+        }
+    })
+}
+
